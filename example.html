@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+<div id="result" >这是一段测试的文本,这是一段测试的文本,这是一段测试的文本
+    <button onclick="clearM()">清除</button>
+    <button onclick="addUnder()">增加下划线</button>
+</div>
+<script src="test.js"></script>
+<script>
+  var s = addSelect({
+    el: '#result',
+    onSelect: function (e, cur) {
+      console.log(e, cur);
+    },
+    backgroundColor: 'red',
+    color: '#fff'
+  });
+
+  function clearM() {
+    s.clear();
+  }
+
+  function addUnder() {
+    var dom =  s.getSelect();
+    dom.style.textDecoration = 'underline';
+  }
+
+</script>
+</body>
+</html>
