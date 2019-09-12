@@ -30,4 +30,4 @@
 
 ## todo
 
- [ ] getSelect返回的dom被简单包装（类似jQ）
+[ ]getSelect返回的dom被简单包装（类似jQ）
