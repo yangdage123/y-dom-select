@@ -27,3 +27,7 @@
 ```
 
 具体请查看`example.html`
+
+## todo
+
+ [ ] getSelect返回的dom被简单包装（类似jQ）
