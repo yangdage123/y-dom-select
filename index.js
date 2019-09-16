@@ -72,6 +72,7 @@ function addSelect(param) {
     clear: function () {
       if (currentEle) {
         currentEle.outerHTML = `${currentEle.innerText}`;
+        currentEle = null;
       }
     },
     getSelect: function () {
